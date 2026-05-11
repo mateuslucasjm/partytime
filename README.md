@@ -50,7 +50,7 @@ npm install
 # Configuração Obrigatória do MongoDB
 Se você não configurar isso corretamente, o `backend` não vai iniciar.
 
-### 🔗 Passo a passo (MongoDB Atlas)
+### Passo a passo (MongoDB Atlas)
 
 1. Acesse o `MongoDB Atlas` pelo seu navegador
 2. Crie uma conta (ou faça login)
