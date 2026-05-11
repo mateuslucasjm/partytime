@@ -169,7 +169,7 @@ npm install
 npm run dev
 ```
 
-# 🧪 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 ### Backend
 
