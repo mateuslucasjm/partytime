@@ -1,32 +1,68 @@
-.home h1 {
-  text-align: center;
-  margin-bottom: 2rem;
+.home {
+  padding: 0.25rem 0;
 }
 
-.parties-container p {
+.home h1 {
   text-align: center;
+  margin-bottom: 1.75rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--color-text);
+}
+
+.parties-container > p {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  font-size: 1.05rem;
 }
 
 .parties-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  padding: 0;
 }
 
 .parties-container .party {
-  max-width: 380px;
+  max-width: none;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
+  gap: 0;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.parties-container .party:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
 }
 
 .parties-container .party img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.parties-container .party h3 {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.1rem;
+  color: var(--color-text);
+  text-align: left;
 }
 
 .parties-container .btn-secondary {
-  max-width: 120px;
-  text-align: center;
+  margin: 0 1rem 1rem;
+  max-width: none;
+  width: fit-content;
+}
+
+@media (max-width: 480px) {
+  .parties-container {
+    grid-template-columns: 1fr;
+  }
 }
