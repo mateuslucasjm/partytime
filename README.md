@@ -4,7 +4,7 @@
 
 ---
 
-## Visão geral do produto
+## Visão geral
 
 O PartyTime organiza o ciclo de vida de uma festa em quatro etapas principais: **listagem** (visualização de todas as festas na página inicial), **criação** (formulário com seleção de serviços), **detalhamento** (consulta de uma festa e dos serviços contratados) e **gestão** (edição ou exclusão do registro). A aplicação não exige autenticação: qualquer usuário com acesso à interface pode criar, visualizar, editar e remover festas, o que simplifica o uso em ambiente acadêmico e de demonstração.
 
